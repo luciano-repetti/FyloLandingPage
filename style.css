@@ -1,5 +1,80 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+header ul{
+    display: flex;
+    gap: 2em;
+}
+
+header ul a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .logo img{
+    width: 8em;
+}
+
+main .intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(217, 28%, 15%);
+}
+
+main .intro .containerIntroImg{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+main .intro .containerIntroImg img{
+    width: 50%;
+}
+
+main .intro .containerIntroImg h2{
+    margin-top: 1em;
+    text-align: center;
+    max-width: 50%;
+    font-size: 2em;
+}
+
+main .intro .containerIntroImg p{
+    max-width: 42%;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+main .intro .containerIntroImg .buttonStarted{
+    margin-top: 1.5em;
+    background: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: #fff;
+    width: 15em;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+main .intro .backgroundCurvy img{
+    width: 100%;
 }
