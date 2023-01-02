@@ -34,14 +34,16 @@ header .logo img{
 
 main .intro{
     width: 100%;
+    padding-bottom: 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: hsl(217, 28%, 15%);
+    position: relative;
+    z-index: 0;
 }
 
 main .intro .containerIntroImg{
-    margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +75,13 @@ main .intro .containerIntroImg .buttonStarted{
     width: 15em;
     padding: 1em;
     border-radius: 2em;
+}
+
+main .intro .backgroundCurvy{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
 }
 
 main .intro .backgroundCurvy img{
