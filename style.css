@@ -22,6 +22,10 @@ header ul{
     gap: 2em;
 }
 
+header ul li{
+    list-style: none;
+}
+
 header ul a{
     color: white;
     text-decoration: none;
@@ -32,9 +36,9 @@ header .logo img{
     width: 8em;
 }
 
-main .intro{
+.intro{
     width: 100%;
-    padding-bottom: 10em;
+    padding-bottom: 11em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,47 +47,111 @@ main .intro{
     z-index: 0;
 }
 
-main .intro .containerIntroImg{
+.intro .containerIntroImg{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
 }
 
-main .intro .containerIntroImg img{
+.intro .containerIntroImg img{
     width: 50%;
 }
 
-main .intro .containerIntroImg h2{
-    margin-top: 1em;
+.intro .containerIntroImg h2{
     text-align: center;
     max-width: 50%;
     font-size: 2em;
 }
 
-main .intro .containerIntroImg p{
+.intro .containerIntroImg p{
     max-width: 42%;
     font-size: 1em;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
-main .intro .containerIntroImg .buttonStarted{
-    margin-top: 1.5em;
+.intro .containerIntroImg .buttonStarted{
+    margin-top: 2em;
     background: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     color: #fff;
     width: 15em;
     padding: 1em;
+    border: none;
     border-radius: 2em;
 }
 
-main .intro .backgroundCurvy{
+.intro .backgroundCurvy{
     width: 100%;
+    height: 390px;
     position: absolute;
     bottom: 0;
     z-index: -1;
 }
 
-main .intro .backgroundCurvy img{
-    width: 100%;
+main .features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(218, 28%, 13%);
+    color: #fff;
+    row-gap: 4.5rem;
+    column-gap: 4.5rem;
+}
+
+main .features .moduleInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .6rem;
+}
+
+main .features .moduleInfo h4{margin-top: .6rem; font-size: 1.2em;}
+
+main .features .moduleInfo p{
+    max-width: 400px;
+    font-size: .9em;
+}
+
+main .works{
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    align-items: center;
+}
+
+main .works .productiveImg{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+}
+
+main .works .productiveImg img{
+    object-fit: cover;
+}
+
+main .works .worksArticle{
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+main .works .worksArticle h2{
+    font-size: 2em;
+    max-width: 10em;
+}
+
+main .works .worksArticle p{
+    max-width: 40em;
+}
+
+main .works .worksArticle a{
+    color: hsl(176, 68%, 64%);
+    padding-bottom: .2em;
+    max-width: fit-content;
+    text-decoration: none;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
 }
